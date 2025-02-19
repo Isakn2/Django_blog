@@ -48,5 +48,18 @@ def post_delete(request, pk):
     post.delete()
     return redirect('post_list')
 
+@login_required
+def post_create(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('post_list')
+    else:
+        form = PostForm()
 
-# Create your views here.
+    return render(request, 'blog/post_create.html', {'form': form})
+
+@login_required
+def profile(request):
+    return render(request, 'accounts/profile.html')
