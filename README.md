@@ -122,7 +122,3 @@ This project is open-source and available under the MIT License.
 
 - **Custom User Model**: If you want to use a custom user model, you can extend `AbstractUser` or `AbstractBaseUser`.
 - **Deployment**: For deployment, consider using a more robust database like PostgreSQL instead of SQLite, and use a service like Heroku or DigitalOcean for hosting.
-
----
-
-You can adjust the details as necessary (e.g., replace "yourusername" with your actual GitHub username). Let me know if you need more help with your `README.md` or any further customization!
